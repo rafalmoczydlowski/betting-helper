@@ -7,7 +7,7 @@
         <link th:href="@{/styles/index.css}"
               rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aplikacja Betting Helper - Index Page</title>
+        <title>Aplikacja Betting Helper - Login Page</title>
     </head>
 </head>
 <body>
@@ -25,6 +25,26 @@
             </li>
         </ul>
     </nav>
+
+    <div class="login-box">
+        <h1>LOG IN</h1>
+        <div th:if="${error}">
+            Login failed. Check the correctness of the entered data
+        </div>
+        <p>Are you new here? Click <a th:href="@{/register}">here</a> to register.</p>
+        <br/>
+        <form method="post" th:action="@{/login}" id="loginForm">
+            <div class="inputBox">
+                <input type="text" placeholder="Username" name="username" id="username">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="inputBox">
+                <i class="fas fa-lock"></i>
+                <input type="text" placeholder="Password" name="password" id="password">
+            </div>
+            <input class="btn" type="submit" value="Sign in">
+        </form>
+    </div>
 
     <div class="text-box">
         <p>I'M</p>

@@ -20,5 +20,4 @@ public class Match {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private final Long id;
-    private final List<Player> playerList;
 }

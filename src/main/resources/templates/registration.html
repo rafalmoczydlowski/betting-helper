@@ -25,7 +25,27 @@
             </li>
         </ul>
     </nav>
-
+    <div class="registration-form">
+        <h1>Registration</h1>
+        <form method="post" th:action="@{/register}" id="registerForm">
+            <div class="inputBox">
+                <input type="text" placeholder="Username" name="username" id="username">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Password" name="password" id="password">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Confirm password" name="confirm" id="confirm">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Full Name" name="fullname" id="fullname">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="E-mail" name="email" id="email">
+            </div>
+            <input class="btn" type="submit" value="Sign in">
+        </form>
+    </div>
     <div class="text-box">
         <p>I'M</p>
         <h1>BETTING <br/> HELPER</h1>
