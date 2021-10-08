@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="my-navbar">
+    <img class="logo_text" th:src="@{/images/LogoText.png}">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Players</a></li>
+        <li><a href="">Teams</a></li>
+        <li><a href="/match/add">Add Match</a></li>
+        <li><a href="">Stats</a></li>
+        <li>
+            <div class="search-box">
+                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                <a class="search-btn" href="">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

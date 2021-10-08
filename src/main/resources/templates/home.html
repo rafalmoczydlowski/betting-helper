@@ -3,34 +3,14 @@
       xmlns:th="http://www.thymeleaf.org"
       lang="en">
 <head>
-    <head>
-        <link th:href="@{/styles/home.css}"
-              rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aplikacja Betting Helper - Index Page</title>
-        <script src="https://kit.fontawesome.com/e753ace776.js" crossorigin="anonymous"></script>
-    </head>
+    <div th:replace="fragments/header :: my-header"></div>
+    <link th:href="@{/styles/home.css}"
+          rel="stylesheet">
+    <title>Aplikacja Betting Helper - Index Page</title>
 </head>
 <body>
 <div class="container">
-    <nav>
-        <img class="logo_text" th:src="@{/images/LogoText.png}">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Players</a></li>
-            <li><a href="">Teams</a></li>
-            <li><a href="/match/add">Add Match</a></li>
-            <li><a href="">Stats</a></li>
-            <li>
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+    <div th:replace="fragments/navbar :: my-navbar"></div>
 </div>
 </body>
 </html>
