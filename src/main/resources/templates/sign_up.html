@@ -21,20 +21,25 @@
 <div class="container">
     <div class="forms-container">
         <div class="signin-signup">
-            <div th:if="${error}">
-                Login failed. Check the correctness of the entered data
-            </div>
-                <form method="POST" th:action="@{/login}" class="sign-in-form">
-                    <h2 class="title">SIGN IN</h2>
+                <form method="POST" th:action="@{/sign_up}" class="sign-in-form">
+                    <h2 class="title">SIGN UP</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" name="username" id="username" placeholder="Username" />
+                        <input type="text" placeholder="Name" name="fullName" id="fullName"/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" name="username" id="username"/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email" id="email"/>
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" name="password" id="password" placeholder="Password" />
+                        <input type="password" placeholder="Password" name="password" id="password"/>
                     </div>
-                    <input type="submit" value="Login" class="btn solid" />
+                    <input type="submit" class="btn" value="Sign up" />
                 </form>
         </div>
     </div>
@@ -42,11 +47,11 @@
     <div class="panels-container">
         <div class="panel left-panel">
             <div class="content">
-                <h3>New here ?</h3>
-                <p>If you don't have an account here, create one immediately.<br/>Click below</p>
+                <h3>One of us ?</h3>
+                <p>If you already have an account please click below</p>
                 <div class="loggingButton">
-                    <form method="GET" th:action="@{/sign_up}">
-                        <input type="submit" value="SIGN UP"/>
+                    <form method="GET" th:action="@{/login}">
+                        <input type="submit" value="SIGN IN"/>
                     </form>
                 </div>
             </div>

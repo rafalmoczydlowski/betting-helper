@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Electro Shackle', sans-serif;
+    font-family: 'Amarante', sans-serif;
     font-size: 20px;
 }
 .container {
@@ -23,6 +23,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 5px 0;
+    text-transform: uppercase;
 }
 .logo_text {
     width: 120px;
@@ -42,6 +43,21 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     position: relative;
+}
+nav ul li .logout-btn input{
+    width: 150px;
+    background-color: blue;
+    color: white;
+    border-radius: 49px;
+    border: 2px solid blue;
+    transition: 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+nav ul li .logout-btn input:hover{
+    width: 180px;
+    background-color: aqua;
+    color: black;
 }
 nav ul li a::after {
     content: '';

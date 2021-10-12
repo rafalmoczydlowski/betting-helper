@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/register")
+@RequestMapping("/sign_up")
 public class RegistryController {
     private UserRepository userRepository;
     private PasswordEncoder passwordEncoder;
@@ -21,7 +21,7 @@ public class RegistryController {
 
     @GetMapping
     public String registerForm() {
-        return "registration";
+        return "sign_up";
     }
 
     @PostMapping
