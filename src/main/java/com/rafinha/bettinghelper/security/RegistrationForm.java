@@ -1,9 +1,13 @@
 package com.rafinha.bettinghelper.security;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@Data
+@Setter
+@Getter
+@RequiredArgsConstructor
 public class RegistrationForm {
     private String username;
     private String password;

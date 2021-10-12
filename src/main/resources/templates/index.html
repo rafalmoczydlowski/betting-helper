@@ -20,7 +20,9 @@
             <li><a href="">Contact</a></li>
             <li>
                 <div class="loggingButton">
-                <a href="/login">Log in</a>
+                    <form method="GET" th:action="@{/login}">
+                        <input type="submit" value="LOG IN"/>
+                    </form>
                 </div>
             </li>
         </ul>
